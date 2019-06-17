@@ -1,0 +1,11 @@
+<aura:component controller="PaginatedDatatableDemoCtrl"
+                implements="force:appHostable,flexipage:availableForAllPageTypes">
+    <aura:attribute name="accountList" type="List"/>
+    <aura:attribute name="accountColumns" type="List"/>
+
+    <aura:handler name="init" action="{!c.onInit}" value="{!this}"/>
+
+    <aura:if isTrue="{!not(empty(v.accountList))}">
+        <c:PaginatedDatatable columns="{!v.accountColumns}" allData="{!v.accountList}" pageSize="3"/>
+    </aura:if>
+</aura:component>	

@@ -1,0 +1,110 @@
+<aura:component access="global">
+    <aura:attribute name="body" type="component[]" access="global"/>
+    <aura:attribute name="class" type="string" access="global"/>
+    <aura:attribute name="title" type="string" access="global"/>
+    <aura:attribute name="columns" type="List" access="global"/>
+    <aura:attribute name="allData" type="List" access="global"/>
+    <aura:attribute name="keyField" type="string" access="global"/>
+    <aura:attribute name="hideCheckboxColumn" type="boolean" access="global"/>
+    <aura:attribute name="hideTableHeader" type="boolean" access="global"/>
+    <aura:attribute name="resizeColumnDisabled" type="boolean" access="global"/>
+    <aura:attribute name="suppressBottomBar" type="boolean" access="global"/>
+    <aura:attribute name="minColumnWidth" type="integer" access="global"/>
+    <aura:attribute name="maxColumnWidth" type="integer" access="global"/>
+    <aura:attribute name="resizeStep" type="integer" access="global"/>
+    <aura:attribute name="sortedBy" type="string" access="global"/>
+    <aura:attribute name="sortedDirection" type="string" access="global"/>
+    <aura:attribute name="defaultSortDirection" type="string" access="global"/>
+    <aura:attribute name="maxRowSelection" type="string" access="global"/>
+    <aura:attribute name="selectedRows" type="list" access="global"/>
+    <aura:attribute name="errors" type="object" access="global"/>
+    <aura:attribute name="draftValues" type="object" access="global"/>
+    <aura:attribute name="oncellchange" type="Aura.Action" access="global"/>
+    <aura:attribute name="onloadmore" type="Aura.Action" access="global"/>
+    <aura:attribute name="onrowselection" type="Aura.Action" access="global"/>
+    <aura:attribute name="onsort" type="Aura.Action" access="global"/>
+    <aura:attribute name="onheaderaction" type="Aura.Action" access="global"/>
+    <aura:attribute name="onrowaction" type="Aura.Action" access="global"/>
+    <aura:attribute name="onresize" type="Aura.Action" access="global"/>
+    <aura:attribute name="onsave" type="Aura.Action" access="global"/>
+    <aura:attribute name="oncancel" type="Aura.Action" access="global"/>
+    <aura:attribute name="pageSize" type="Integer" default="5" access="global"/>
+
+
+
+    <aura:attribute name="data" type="object"/>
+    <aura:attribute name="currentPageNumber" type="integer" default="1"/>
+    <aura:attribute name="totalPages" type="integer" default="0"/>
+    <aura:attribute name="pageList" type="list"/>
+
+    <aura:handler name="init" action="{!c.onInit}" value="{!this}"/>
+
+    <lightning:card>
+        <lightning:layout multipleRows="true" horizontalAlign="center">
+            <lightning:layoutItem padding="around-small" size="12">
+                <lightning:datatable aura:id="dataTable"
+                                     body="{!v.body}"
+                                     class="{!v.class}"
+                                     title="{!v.title}"
+                                     columns="{!v.columns}"
+                                     data="{!v.data}"
+                                     keyField="{!v.keyField}"
+                                     hideCheckboxColumn="{!v.hideCheckboxColumn}"
+                                     hideTableHeader="{!v.hideTableHeader}"
+                                     resizeColumnDisabled="{!v.resizeColumnDisabled}"
+                                     suppressBottomBar="{!v.suppressBottomBar}"
+                                     minColumnWidth="{!v.minColumnWidth}"
+                                     maxColumnWidth="{!v.maxColumnWidth}"
+                                     resizeStep="{!v.resizeStep}"
+                                     sortedBy="{!v.sortedBy}"
+                                     sortedDirection="{!v.sortedDirection}"
+                                     defaultSortDirection="{!v.defaultSortDirection}"
+                                     maxRowSelection="{!v.maxRowSelection}"
+                                     selectedRows="{!v.selectedRows}"
+                                     errors="{!v.errors}"
+                                     draftValues="{!v.draftValues}"
+                                     oncellchange="{!v.oncellchange}"
+                                     onloadmore="{!v.onloadmore}"
+                                     onrowselection="{!v.onrowselection}"
+                                     onsort="{!v.onsort}"
+                                     onheaderaction="{!v.onheaderaction}"
+                                     onrowaction="{!v.onrowaction}"
+                                     onresize="{!v.onresize}"
+                                     onsave="{!v.onsave}"
+                                     oncancel="{!v.oncancel}"/>
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="around-small" flexibility="auto">
+                <lightning:button label="First" iconName="utility:left" iconPosition="left"
+                                  onclick="{!c.onFirst}" disabled="{! v.currentPageNumber == 1}"/>
+                <lightning:button iconName="utility:chevronleft" iconPosition="left"
+                                  onclick="{!c.onPrev}" disabled="{! v.currentPageNumber == 1}"/>
+                <span class="slds-p-horizontal_x-small">
+                    <a onclick="{!c.processMe}" name="1" 
+                       class="{! (v.currentPageNumber == 1) ? 'selected' : ''}">1</a>
+                </span>
+                <span class="slds-p-horizontal_xxx-small">
+                    <a>...</a>
+                </span>
+                
+                <aura:iteration items="{!v.pageList}" var="item">
+                    <span class="slds-p-horizontal_x-small">
+                        <a onclick="{!c.processMe}" name="{!item}"
+                           class="{! (v.currentPageNumber == item) ? 'selected' : ''}">{!item}</a>
+                    </span>
+                </aura:iteration>
+                
+                <span class="slds-p-horizontal_xxx-small">
+                    <a>...</a>
+                </span>
+                <span class="slds-p-horizontal_x-small">
+                    <a onclick="{!c.processMe}" name="{!v.totalPages}"
+                       class="{! (v.currentPageNumber == v.totalPages) ? 'selected' : ''}">{!v.totalPages}</a>
+                </span>
+                <lightning:button iconName="utility:chevronright" iconPosition="right" 
+                                  disabled="{! v.currentPageNumber == v.totalPages}" onclick="{!c.onNext}"/>
+                <lightning:button label="Last" iconName="utility:right" iconPosition="right" 
+                                  disabled="{! v.currentPageNumber == v.totalPages}" onclick="{!c.onLast}"/>
+            </lightning:layoutItem>
+        </lightning:layout>
+    </lightning:card>
+</aura:component>	
