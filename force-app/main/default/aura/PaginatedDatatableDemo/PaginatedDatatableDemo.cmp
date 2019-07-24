@@ -6,6 +6,10 @@
     <aura:handler name="init" action="{!c.onInit}" value="{!this}"/>
 
     <aura:if isTrue="{!not(empty(v.accountList))}">
-        <c:PaginatedDatatable columns="{!v.accountColumns}" allData="{!v.accountList}" pageSize="3"/>
+        <c:PaginatedDatatable columns="{!v.accountColumns}" 
+                              allData="{!v.accountList}" 
+                              pageSize="3" 
+                              onrowaction="{!c.handleRowAction}"
+                              keyField="Id"/>
     </aura:if>
 </aura:component>	

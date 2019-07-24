@@ -1,10 +1,9 @@
 <aura:component access="global">
-    <aura:attribute name="body" type="component[]" access="global"/>
     <aura:attribute name="class" type="string" access="global"/>
     <aura:attribute name="title" type="string" access="global"/>
-    <aura:attribute name="columns" type="List" access="global"/>
-    <aura:attribute name="allData" type="List" access="global"/>
-    <aura:attribute name="keyField" type="string" access="global"/>
+    <aura:attribute name="columns" type="List" access="global" required="true"/>
+    <aura:attribute name="allData" type="List" access="global" required="true"/>
+    <aura:attribute name="keyField" type="string" access="global" required="true"/>
     <aura:attribute name="hideCheckboxColumn" type="boolean" access="global"/>
     <aura:attribute name="hideTableHeader" type="boolean" access="global"/>
     <aura:attribute name="resizeColumnDisabled" type="boolean" access="global"/>
@@ -43,7 +42,6 @@
         <lightning:layout multipleRows="true" horizontalAlign="center">
             <lightning:layoutItem padding="around-small" size="12">
                 <lightning:datatable aura:id="dataTable"
-                                     body="{!v.body}"
                                      class="{!v.class}"
                                      title="{!v.title}"
                                      columns="{!v.columns}"
