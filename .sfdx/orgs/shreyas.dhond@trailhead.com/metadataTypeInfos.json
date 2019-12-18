@@ -1,5 +1,5 @@
 {
-    "sourceApiVersion": "45.0",
+    "sourceApiVersion": "47.0",
     "typeDefs": {
         "InstalledPackage": {
             "metadataName": "InstalledPackage",
@@ -44,6 +44,29 @@
                 "workspaceStrategy": "nonDecomposed",
                 "commitStrategy": "fineGrainTracking",
                 "metadataName": "CustomLabels",
+                "useSparseComposition": false,
+                "decompositions": [],
+                "contentStrategy": "nonDecomposedContent"
+            },
+            "hasVirtualSubtypes": false
+        },
+        "NavigationMenu": {
+            "metadataName": "NavigationMenu",
+            "isAddressable": true,
+            "isSourceTracked": true,
+            "ext": "navigationMenu",
+            "hasContent": false,
+            "defaultDirectory": "navigationMenus",
+            "nameForMsgs": "Navigation Menu",
+            "nameForMsgsPlural": "Navigation Menus",
+            "contentIsBinary": false,
+            "hasStandardMembers": false,
+            "deleteSupported": true,
+            "decompositionConfig": {
+                "strategy": "nonDecomposed",
+                "workspaceStrategy": "nonDecomposed",
+                "commitStrategy": "fineGrainTracking",
+                "metadataName": "NavigationMenu",
                 "useSparseComposition": false,
                 "decompositions": [],
                 "contentStrategy": "nonDecomposedContent"
@@ -135,6 +158,29 @@
                 "workspaceStrategy": "nonDecomposed",
                 "commitStrategy": "fineGrainTracking",
                 "metadataName": "Certificate",
+                "useSparseComposition": false,
+                "decompositions": [],
+                "contentStrategy": "nonDecomposedContent"
+            },
+            "hasVirtualSubtypes": false
+        },
+        "LightningMessageChannel": {
+            "metadataName": "LightningMessageChannel",
+            "isAddressable": true,
+            "isSourceTracked": true,
+            "ext": "messageChannel",
+            "hasContent": false,
+            "defaultDirectory": "messageChannels",
+            "nameForMsgs": "Lightning Message Channel",
+            "nameForMsgsPlural": "Lightning Message Channels",
+            "contentIsBinary": false,
+            "hasStandardMembers": false,
+            "deleteSupported": true,
+            "decompositionConfig": {
+                "strategy": "nonDecomposed",
+                "workspaceStrategy": "nonDecomposed",
+                "commitStrategy": "fineGrainTracking",
+                "metadataName": "LightningMessageChannel",
                 "useSparseComposition": false,
                 "decompositions": [],
                 "contentStrategy": "nonDecomposedContent"
@@ -4034,6 +4080,320 @@
             },
             "hasVirtualSubtypes": false
         },
+        "OauthCustomScope": {
+            "metadataName": "OauthCustomScope",
+            "isAddressable": true,
+            "isSourceTracked": true,
+            "ext": "oauthcustomscope",
+            "hasContent": false,
+            "defaultDirectory": "oauthcustomscopes",
+            "nameForMsgs": "Oauth Custom Scope",
+            "nameForMsgsPlural": "Oauth Custom Scopes",
+            "contentIsBinary": false,
+            "hasStandardMembers": false,
+            "deleteSupported": true,
+            "decompositionConfig": {
+                "strategy": "nonDecomposed",
+                "workspaceStrategy": "nonDecomposed",
+                "commitStrategy": "fineGrainTracking",
+                "metadataName": "OauthCustomScope",
+                "useSparseComposition": false,
+                "decompositions": [],
+                "contentStrategy": "nonDecomposedContent"
+            },
+            "hasVirtualSubtypes": false
+        },
+        "PlatformEventChannel": {
+            "metadataName": "PlatformEventChannel",
+            "isAddressable": true,
+            "isSourceTracked": true,
+            "ext": "platformEventChannel",
+            "hasContent": false,
+            "defaultDirectory": "platformEventChannels",
+            "nameForMsgs": "Platform Event Channel",
+            "nameForMsgsPlural": "Platform Event Channels",
+            "contentIsBinary": false,
+            "hasStandardMembers": false,
+            "deleteSupported": true,
+            "decompositionConfig": {
+                "strategy": "nonDecomposed",
+                "workspaceStrategy": "nonDecomposed",
+                "commitStrategy": "fineGrainTracking",
+                "metadataName": "PlatformEventChannel",
+                "useSparseComposition": false,
+                "decompositions": [],
+                "contentStrategy": "nonDecomposedContent"
+            },
+            "hasVirtualSubtypes": false
+        },
+        "CustomHelpMenuSection": {
+            "metadataName": "CustomHelpMenuSection",
+            "isAddressable": true,
+            "isSourceTracked": true,
+            "ext": "customHelpMenuSection",
+            "hasContent": false,
+            "defaultDirectory": "customHelpMenuSections",
+            "nameForMsgs": "Custom Help Menu Section",
+            "nameForMsgsPlural": "Custom Help Menu Sections",
+            "contentIsBinary": false,
+            "hasStandardMembers": false,
+            "deleteSupported": true,
+            "decompositionConfig": {
+                "strategy": "nonDecomposed",
+                "workspaceStrategy": "nonDecomposed",
+                "commitStrategy": "fineGrainTracking",
+                "metadataName": "CustomHelpMenuSection",
+                "useSparseComposition": false,
+                "decompositions": [],
+                "contentStrategy": "nonDecomposedContent"
+            },
+            "hasVirtualSubtypes": false
+        },
+        "Prompt": {
+            "metadataName": "Prompt",
+            "isAddressable": true,
+            "isSourceTracked": true,
+            "ext": "prompt",
+            "hasContent": false,
+            "defaultDirectory": "prompts",
+            "nameForMsgs": "Prompt",
+            "nameForMsgsPlural": "Prompts",
+            "contentIsBinary": false,
+            "hasStandardMembers": false,
+            "deleteSupported": true,
+            "decompositionConfig": {
+                "strategy": "nonDecomposed",
+                "workspaceStrategy": "nonDecomposed",
+                "commitStrategy": "fineGrainTracking",
+                "metadataName": "Prompt",
+                "useSparseComposition": false,
+                "decompositions": [],
+                "contentStrategy": "nonDecomposedContent"
+            },
+            "hasVirtualSubtypes": false
+        },
+        "MlDomain": {
+            "metadataName": "MlDomain",
+            "isAddressable": true,
+            "isSourceTracked": true,
+            "ext": "mlDomain",
+            "hasContent": false,
+            "defaultDirectory": "mlDomains",
+            "nameForMsgs": "Ml Domain",
+            "nameForMsgsPlural": "Ml Domains",
+            "contentIsBinary": false,
+            "hasStandardMembers": false,
+            "deleteSupported": true,
+            "decompositionConfig": {
+                "strategy": "nonDecomposed",
+                "workspaceStrategy": "nonDecomposed",
+                "commitStrategy": "fineGrainTracking",
+                "metadataName": "MlDomain",
+                "useSparseComposition": false,
+                "decompositions": [],
+                "contentStrategy": "nonDecomposedContent"
+            },
+            "hasVirtualSubtypes": false
+        },
+        "Bot": {
+            "metadataName": "Bot",
+            "isAddressable": true,
+            "isSourceTracked": true,
+            "ext": "bot",
+            "hasContent": false,
+            "defaultDirectory": "bots",
+            "nameForMsgs": "Bot",
+            "nameForMsgsPlural": "Bots",
+            "contentIsBinary": false,
+            "childXmlNames": [
+                "BotVersion"
+            ],
+            "hasStandardMembers": false,
+            "deleteSupported": true,
+            "decompositionConfig": {
+                "strategy": "describeMetadata",
+                "workspaceStrategy": "folderPerSubtype",
+                "commitStrategy": "fineGrainTracking",
+                "contentStrategy": "N/A",
+                "metadataName": "Bot",
+                "isGlobal": false,
+                "isEmptyContainer": false,
+                "useSparseComposition": true,
+                "decompositions": [
+                    {
+                        "metadataName": "BotVersion",
+                        "metadataEntityNameElement": "fullName",
+                        "xmlFragmentName": "botVersions",
+                        "defaultDirectory": "botVersions",
+                        "ext": "botVersion",
+                        "hasStandardMembers": false,
+                        "isAddressable": true
+                    }
+                ]
+            },
+            "hasVirtualSubtypes": true
+        },
+        "AnimationRule": {
+            "metadataName": "AnimationRule",
+            "isAddressable": true,
+            "isSourceTracked": true,
+            "ext": "animationRule",
+            "hasContent": false,
+            "defaultDirectory": "animationRules",
+            "nameForMsgs": "Animation Rule",
+            "nameForMsgsPlural": "Animation Rules",
+            "contentIsBinary": false,
+            "hasStandardMembers": false,
+            "deleteSupported": true,
+            "decompositionConfig": {
+                "strategy": "nonDecomposed",
+                "workspaceStrategy": "nonDecomposed",
+                "commitStrategy": "fineGrainTracking",
+                "metadataName": "AnimationRule",
+                "useSparseComposition": false,
+                "decompositions": [],
+                "contentStrategy": "nonDecomposedContent"
+            },
+            "hasVirtualSubtypes": false
+        },
+        "RecordActionDeployment": {
+            "metadataName": "RecordActionDeployment",
+            "isAddressable": true,
+            "isSourceTracked": true,
+            "ext": "deployment",
+            "hasContent": false,
+            "defaultDirectory": "recordActionDeployments",
+            "nameForMsgs": "Record Action Deployment",
+            "nameForMsgsPlural": "Record Action Deployments",
+            "contentIsBinary": false,
+            "hasStandardMembers": false,
+            "deleteSupported": true,
+            "decompositionConfig": {
+                "strategy": "nonDecomposed",
+                "workspaceStrategy": "nonDecomposed",
+                "commitStrategy": "fineGrainTracking",
+                "metadataName": "RecordActionDeployment",
+                "useSparseComposition": false,
+                "decompositions": [],
+                "contentStrategy": "nonDecomposedContent"
+            },
+            "hasVirtualSubtypes": false
+        },
+        "EmbeddedServiceFlowConfig": {
+            "metadataName": "EmbeddedServiceFlowConfig",
+            "isAddressable": true,
+            "isSourceTracked": true,
+            "ext": "EmbeddedServiceFlowConfig",
+            "hasContent": false,
+            "defaultDirectory": "EmbeddedServiceFlowConfig",
+            "nameForMsgs": "Embedded Service Flow Config",
+            "nameForMsgsPlural": "Embedded Service Flow Configs",
+            "contentIsBinary": false,
+            "hasStandardMembers": false,
+            "deleteSupported": true,
+            "decompositionConfig": {
+                "strategy": "nonDecomposed",
+                "workspaceStrategy": "nonDecomposed",
+                "commitStrategy": "fineGrainTracking",
+                "metadataName": "EmbeddedServiceFlowConfig",
+                "useSparseComposition": false,
+                "decompositions": [],
+                "contentStrategy": "nonDecomposedContent"
+            },
+            "hasVirtualSubtypes": false
+        },
+        "PlatformEventChannelMember": {
+            "metadataName": "PlatformEventChannelMember",
+            "isAddressable": true,
+            "isSourceTracked": true,
+            "ext": "platformEventChannelMember",
+            "hasContent": false,
+            "defaultDirectory": "platformEventChannelMembers",
+            "nameForMsgs": "Platform Event Channel Member",
+            "nameForMsgsPlural": "Platform Event Channel Members",
+            "contentIsBinary": false,
+            "hasStandardMembers": false,
+            "deleteSupported": true,
+            "decompositionConfig": {
+                "strategy": "nonDecomposed",
+                "workspaceStrategy": "nonDecomposed",
+                "commitStrategy": "fineGrainTracking",
+                "metadataName": "PlatformEventChannelMember",
+                "useSparseComposition": false,
+                "decompositions": [],
+                "contentStrategy": "nonDecomposedContent"
+            },
+            "hasVirtualSubtypes": false
+        },
+        "CanvasMetadata": {
+            "metadataName": "CanvasMetadata",
+            "isAddressable": true,
+            "isSourceTracked": true,
+            "ext": "Canvas",
+            "hasContent": false,
+            "defaultDirectory": "Canvases",
+            "nameForMsgs": "Canvas Metadata",
+            "nameForMsgsPlural": "Canvas Metadatas",
+            "contentIsBinary": false,
+            "hasStandardMembers": false,
+            "deleteSupported": true,
+            "decompositionConfig": {
+                "strategy": "nonDecomposed",
+                "workspaceStrategy": "nonDecomposed",
+                "commitStrategy": "fineGrainTracking",
+                "metadataName": "CanvasMetadata",
+                "useSparseComposition": false,
+                "decompositions": [],
+                "contentStrategy": "nonDecomposedContent"
+            },
+            "hasVirtualSubtypes": false
+        },
+        "MobileApplicationDetail": {
+            "metadataName": "MobileApplicationDetail",
+            "isAddressable": true,
+            "isSourceTracked": true,
+            "ext": "MobileApplicationDetail",
+            "hasContent": false,
+            "defaultDirectory": "MobileApplicationDetails",
+            "nameForMsgs": "Mobile Application Detail",
+            "nameForMsgsPlural": "Mobile Application Details",
+            "contentIsBinary": false,
+            "hasStandardMembers": false,
+            "deleteSupported": true,
+            "decompositionConfig": {
+                "strategy": "nonDecomposed",
+                "workspaceStrategy": "nonDecomposed",
+                "commitStrategy": "fineGrainTracking",
+                "metadataName": "MobileApplicationDetail",
+                "useSparseComposition": false,
+                "decompositions": [],
+                "contentStrategy": "nonDecomposedContent"
+            },
+            "hasVirtualSubtypes": false
+        },
+        "LightningOnboardingConfig": {
+            "metadataName": "LightningOnboardingConfig",
+            "isAddressable": true,
+            "isSourceTracked": true,
+            "ext": "lightningOnboardingConfig",
+            "hasContent": false,
+            "defaultDirectory": "lightningOnboardingConfigs",
+            "nameForMsgs": "Lightning Onboarding Config",
+            "nameForMsgsPlural": "Lightning Onboarding Configs",
+            "contentIsBinary": false,
+            "hasStandardMembers": false,
+            "deleteSupported": true,
+            "decompositionConfig": {
+                "strategy": "nonDecomposed",
+                "workspaceStrategy": "nonDecomposed",
+                "commitStrategy": "fineGrainTracking",
+                "metadataName": "LightningOnboardingConfig",
+                "useSparseComposition": false,
+                "decompositions": [],
+                "contentStrategy": "nonDecomposedContent"
+            },
+            "hasVirtualSubtypes": false
+        },
         "CustomField": {
             "parent": {
                 "metadataName": "CustomObject",
@@ -5616,6 +5976,57 @@
             "isSourceTracked": true,
             "nameForMsgs": "Sharing Territory Rule",
             "nameForMsgsPlural": "Sharing Territory Rules",
+            "deleteSupported": true
+        },
+        "BotVersion": {
+            "parent": {
+                "metadataName": "Bot",
+                "isAddressable": true,
+                "isSourceTracked": true,
+                "ext": "bot",
+                "hasContent": false,
+                "defaultDirectory": "bots",
+                "nameForMsgs": "Bot",
+                "nameForMsgsPlural": "Bots",
+                "contentIsBinary": false,
+                "childXmlNames": [
+                    "BotVersion"
+                ],
+                "hasStandardMembers": false,
+                "deleteSupported": true,
+                "decompositionConfig": {
+                    "strategy": "describeMetadata",
+                    "workspaceStrategy": "folderPerSubtype",
+                    "commitStrategy": "fineGrainTracking",
+                    "contentStrategy": "N/A",
+                    "metadataName": "Bot",
+                    "isGlobal": false,
+                    "isEmptyContainer": false,
+                    "useSparseComposition": true,
+                    "decompositions": [
+                        {
+                            "metadataName": "BotVersion",
+                            "metadataEntityNameElement": "fullName",
+                            "xmlFragmentName": "botVersions",
+                            "defaultDirectory": "botVersions",
+                            "ext": "botVersion",
+                            "hasStandardMembers": false,
+                            "isAddressable": true
+                        }
+                    ]
+                },
+                "hasVirtualSubtypes": true
+            },
+            "metadataName": "BotVersion",
+            "defaultDirectory": "botVersions",
+            "ext": "botVersion",
+            "hasStandardMembers": false,
+            "hasContent": false,
+            "contentIsBinary": false,
+            "isAddressable": true,
+            "isSourceTracked": true,
+            "nameForMsgs": "Bot Version",
+            "nameForMsgsPlural": "Bot Versions",
             "deleteSupported": true
         }
     }

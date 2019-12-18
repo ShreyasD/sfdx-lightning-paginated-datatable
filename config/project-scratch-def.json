@@ -1,10 +1,5 @@
 {
-  "orgName": "shreyasdhond1 Company",
+  "orgName": "shreyasdhond company",
   "edition": "Developer",
-  "features": [],
-  "settings": {
-    "orgPreferenceSettings": {
-      "s1DesktopEnabled": true
-    }
-  }
+  "features": []
 }

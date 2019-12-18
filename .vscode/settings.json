@@ -1,3 +1,8 @@
 {
-    "eslint.nodePath": "/Users/shreyasdhond 1/.vscode/extensions/salesforce.salesforcedx-vscode-lwc-46.6.0/node_modules"
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/.sfdx": true
+  },
+  "eslint.nodePath": "/Users/shreyasdhond/.vscode/extensions/salesforce.salesforcedx-vscode-lwc-47.10.0/node_modules"
 }
